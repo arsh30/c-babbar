@@ -1,0 +1,88 @@
+for java: 
+        compile     : javac filename.java
+        run         : java filename.java
+        InOneLine   : javac filename.java && java filename.java < input.txt > output.txt
+
+for cpp: 
+        compile     : g++ filename.cpp -o out 
+        run         : ./out (Mac and Linux), out (window)
+        InOneLine   : g++ filename.cpp -o out && out  < input.txt > output.txt
+
+
+[Note: jiski taraf arrow ka corner hoga means vo usfile me output throw krega]
+
+
+How cpp work :
+                code start execution from main 
+                agr main me jo function hai vo just upr rhega main ke 
+                and agr uss function ke andr ke andr ik hor funtion hai vo just upr hoga uss function jidr se call aayi 
+
+
+cpp syntax:
+                /*
+                BASIC SYNTAX OF CPP PROGRAM
+
+                #include<iostream>
+                using namespace std;
+                int main(){
+                        Write all code...
+                        return 0;
+                }
+                */
+
+
+java syntax:    
+                /*
+                BASIC SYNTAX
+                public class FILENAME {
+                        public static void main(String[] args) {
+                        
+                        }
+                }
+                */
+
+
+How to take input in cpp: 
+                         cin >> a >> b; 
+To go into new Line:     << endl;
+
+How to take input in Java: 
+                        import java.util.Scanner;
+                        int a = scn.nextInt(); // input
+
+
+Note: Main variable declares are in the main function 
+      and we paas the variable in the arguments when we call the function from main 
+
+
+Note In cpp Regarding the to_string() or << to print something :
+        void printTableOfN(int n)
+        {
+        for (int i = 1; i <= 10; i++)
+        {
+                // cout << n << " X " << i << " = " << n * i << endl;  //Note -> in java instead of " + " operator we use " << " in cpp to print something
+                cout << to_string(n) + " X " + to_string(i) + " = " + to_string(n * i) << endl; // or to take same feel like in java
+                // we use this  to_string() jo  bhi integer hoga usko to_string me wrap krdenge.
+                // Note: normally we use this upr wale ki jgh because question me they want to return the string
+        }
+        } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

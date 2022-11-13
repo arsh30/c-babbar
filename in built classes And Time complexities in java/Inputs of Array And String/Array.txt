@@ -1,0 +1,92 @@
+# How to take input of 1D Array In Java. 
+
+for (int i = 0; i < n; i++){
+    arr[i] = scn.nextInt();
+}
+--------------------
+
+# How to take input of 1D Array In cpp. 
+
+for (int i = 0; i < n; i++){
+    cin >> arr[i] << " ";
+    //int n; cin >> n;
+}
+----------------------
+
+# How To Take Input in 2D Array in Java
+ 
+ public static void input(int[][] arr) {
+    int n = arr.length;
+    int m = arr[0].length;
+
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < m; j++) {
+        arr[i][j] = scn.nextInt();
+      }
+    }
+  }
+-----------------------
+
+# How to Take Input In 2D Array in Cpp
+
+void input(vector<vector<int>> &arr)
+{
+    int n = arr.size();
+    int m = arr[0].size();
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cin >> arr[i][j];
+        }
+    }
+}
+
+------------------------
+
+# How to Pass The Array As A argument into another function in java: 
+
+eg:
+public static void recieveArray(int[] arr){  // Here we are recieving 1d Array in Java 
+}
+
+public static void recieveArray(int[][] arr){  // Here we are recieving 2d Array in Java 
+}
+
+-----------------------
+# How to Pass The Array As A argument into another function in CPP: 
+
+eg:
+void recieveArray(Vector<int> &arr){  // Here we are recieving 1d Array in CPP
+}
+
+void recieveArray(vector<vector<int>> &arr){  // Here we are recieving 2d Array in CPP
+}
+
+------------------------
+
+# Display loop in Java using forEach loop : 
+It is used to get only values 
+It only moves forward
+
+    public static void display_2(int[] arr) {
+        for (int e : arr) { // for 1D
+            System.out.print(e + " ");
+        }
+        System.out.println();
+        }
+  }
+
+  public static void display_2(int[][] arr) {
+    for (int[] ele : arr) {  // for 2D
+      for (int e : ele) {
+        System.out.print(e + " ");
+      }
+      System.out.println();
+    }
+  }
+
+---------------------
+
+
